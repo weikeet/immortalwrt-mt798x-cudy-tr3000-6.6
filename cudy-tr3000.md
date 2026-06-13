@@ -9,3 +9,5 @@ luci-app-ttyd
 luci-app-upnp
 luci-app-modem
 luci-app-sms-tool
+sms-tool
+sendat
