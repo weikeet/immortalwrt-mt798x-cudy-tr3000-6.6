@@ -1,17 +1,26 @@
 # Cudy tr3000 v1 immortalwrt-24.10 6.6内核带闭源硬件加速
-## 使用说明：
-### Uboot：  
+
+## 使用说明
+
+### Uboot  
+
 [cudy tr3000 v1中文三分区DHCP uboot第二版](https://www.right.com.cn/forum/thread-8415351-1-1.html)  
 使用mod-112m刷入即可(新版256MB不适用)  
-### 固件特点：  
+
+### 固件特点  
+
 纯净、简洁、追随源码更新  
-### 添加插件：  
-1、passwall2代理插件  
-2、USB模块支持，移动硬盘，同添加了usb-net支持  
+
+### 添加插件  
+
+1、passwall2 代理插件  
+2、USB 模块支持，移动硬盘，同添加了 usb-net 支持  
 3、网络共享，ksmbd  
-4、下载工具，Aria2，已添加依赖，只需要在移动硬盘根目录——新建文件夹—重命名—aria2，即可正常运行  
+4、移动通信模组 luci-app-modem & luci-app-sms-tool
 5、MTK硬件网络加速  
+
 ### 网络信息  
+
 登录地址：192.168.10.1  
 登录密码：无  
 WIFI名称：immortalwrt-2.4G/5G  
