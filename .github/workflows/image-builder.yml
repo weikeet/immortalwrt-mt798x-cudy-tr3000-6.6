@@ -169,6 +169,16 @@ jobs:
           rm -rf packages
           echo "FIRMWARE=$PWD" >> $GITHUB_ENV
 
+      - name: Remove extraneous files
+        if: steps.organize.conclusion == 'success' && !cancelled()
+        run: |
+          cd "${{ env.FIRMWARE }}"
+          rm -f mt7986-ram-*.bin \
+                profiles.json \
+                version.buildinfo
+          echo "Cleaned up firmware directory"
+          ls -lh
+
       - name: Upload firmware directory
         uses: actions/upload-artifact@main
         if: steps.organize.conclusion == 'success' && !cancelled()
