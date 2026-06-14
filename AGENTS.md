@@ -205,6 +205,7 @@ files/usr/bin/my-script    → /usr/bin/my-script
 - **提交信息**：简洁祈使句，如有作用域则以作用域开头。
 - **切勿**撤回用户已有的更改。
 - `.idea/` 目录是 IDE 元数据（JetBrains）—— 除非明确要求，否则不动。
+- git commit 只提交到本地，除非用户指示推送到远程。
 
 ---
 
