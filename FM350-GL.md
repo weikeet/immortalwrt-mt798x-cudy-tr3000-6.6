@@ -77,7 +77,7 @@ AT+CPIN?
 2026-06-13 16:19:10 
 +CPIN: READY
 
-# [手动设置接入点] 移动 CBNET, 电信 CMNET, 联通 UNINET, 通常不需要设置，拨号配置里面设置过接入点了
+# [手动设置接入点] 移动 CBNET, 电信 CMNET, 联通 3GNET ~UNINET~, 通常不需要设置，拨号配置里面设置过接入点了
 AT+CGDCONT=3,"IPV4V6","UNINET"
 2026-06-13 16:20:46 
 
@@ -85,6 +85,13 @@ AT+CGDCONT=3,"IPV4V6","UNINET"
 AT+CGACT=1,3
 2026-06-13 16:21:33 
 +CGEV: ME PDN ACT 3
+```
+
+```shell
+中国移动：cmnet（注：部分特定固件下移动卡可能需要填写 cbnet）
+中国联通：3gnet ~uninet~
+中国电信：ctnet
+中国广电：cbnet
 ```
 
 ## Q & A
